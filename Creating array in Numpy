@@ -4,5 +4,49 @@ import numpy as np
 a = np.arange(10) #using arange function
 print(a)
 
+
 b = np.array([1,2,3,4,5]) #creating array from list
 print(b)
+
+
+## 3. Creating arrays
+### 3.1. Manual construction of the arrays
+
+
+#create 1 - D array #vector
+a = np.array([1,2,3,4,5])
+print(a)
+
+
+#print dimensions
+print(a.ndim)
+
+#print shape
+print(a.shape)
+print(len(a))
+
+
+#create 2-D array #matrix
+b = np.array([[1,2,3],[4,5,6]]) #list of lists
+print(b)
+
+
+#print shape
+print(a.shape)
+print(len(a))
+
+
+#create 2-D array #matrix
+b = np.array([[1,2,3],[4,5,6]]) #list of lists
+print(b)
+print(b.ndim)
+print(b.shape)
+print(len(b)) #size of first dimension or number of rows
+
+
+#create 3 - D array #tensors
+c = np.array([[[0,1],[2,3]],[[4,5],[6,7]]])
+print(c)
+print(c.ndim)
+print(c.shape)
+print(len(c))
