@@ -1,0 +1,8 @@
+### creating array in numpy
+import numpy as np
+
+a = np.arange(10) #using arange function
+print(a)
+
+b = np.array([1,2,3,4,5]) #creating array from list
+print(b)
