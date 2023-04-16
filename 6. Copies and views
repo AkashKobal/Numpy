@@ -1,0 +1,19 @@
+## 6. Copies and views 
+# Slicing operation creates a view on the original array which is just a way of 
+# accessing the data. Thus, the original array is not copied in the memory. 
+# You can use <strong>np.may_share_memory()</strong> to check whether two arrays share the same memory block.
+
+a = np.arange(10)
+b = a[::2]
+print(np.shares_memory(a,b))
+
+b[0] = 10
+print(b)
+print(a) #a is also updated, since is shares the same location in memory
+
+c = a[::2].copy() #force the copy
+print(np.shares_memory(a,c))
+
+c[0] = 5
+print(c)
+print(a)
