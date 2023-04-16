@@ -1,0 +1,10 @@
+## 4. Datatypes
+#we can explicitly specify the required data type
+a = np.arange(10, dtype='float')
+print(a)
+
+b = np.array([1+2j, 5+1j])
+print(b.dtype)
+
+c = np.array([True, False, True])
+print(c.dtype)
