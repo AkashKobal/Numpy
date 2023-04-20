@@ -1,1 +1,9 @@
 #### Logical Operations
+a = np.array([1,0,0,1],dtype='bool')
+b = np.array([0,1,0,1],dtype='bool')
+
+print(np.logical_or(a,b))
+
+print(np.logical_and(a,b))
+
+print(np.logical_not(a))
