@@ -1,0 +1,28 @@
+### 8.2. Basic Reductions
+
+x = np.array([1,2,3,4])
+print(np.sum(x))
+
+y = np.array([[1,2],[3,4]])
+print(y)
+print("*"*100)
+print(y.T)
+
+print(y.sum(axis=0)) #column wise sum
+print(y.sum(axis=1)) #row wise sum
+
+
+#### other reductions
+print(y.min())
+print(y.max())
+print(y.argmin()) #index of minimum element
+print(y.argmax()) #index of maximum element
+
+
+
+#### Logical reductions
+print(np.all([True, False, False])) #logical and
+print(np.any([True, False, False])) #logical or
+a = np.zeros((50,50))
+
+print(np.any(a!=0)) #checks whether any element in a is not equal to zero
