@@ -1,0 +1,10 @@
+ ## Adding a new dimension
+ 
+ z = np.arange(1,10,2)
+print(z.shape)
+
+z = z[:,np.newaxis]
+print(z.shape)
+
+z = z[:,np.newaxis]
+print(z.shape)
