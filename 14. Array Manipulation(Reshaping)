@@ -1,0 +1,9 @@
+## Reshaping
+
+print(a.shape)
+
+b = a.ravel()
+print(b.shape)
+
+b = b.reshape(2,3)
+print(b.shape)
