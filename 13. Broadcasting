@@ -1,0 +1,33 @@
+## Broadcasting
+
+
+import numpy as np
+a = np.tile(np.arange(0, 40, 10),(3,1)) #replicate rows 3 times and columns 1 time # change columns
+print(a)
+print("*"*100)
+
+a = a.T
+print(a)
+
+
+
+b = np.array([0,1,2])
+print(b)
+
+
+c = a + b
+print(c)
+
+
+a = np.arange(0,40,10)
+print(a.shape)
+
+a = a[:, np.newaxis] #adds a new axis
+print(a.shape)
+
+
+a = a[:, np.newaxis] #adds a new axis
+print(a.shape)
+
+
+print(a+b)
