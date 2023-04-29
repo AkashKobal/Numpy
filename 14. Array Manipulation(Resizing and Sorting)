@@ -1,0 +1,23 @@
+# Resizing
+
+a = np.arange(5)
+a.resize((10,))
+
+
+## Sorting
+
+a = np.array([[5,4,3],[2,1,9]])
+print(a)
+
+
+b = np.sort(a, axis=1)
+print(b)
+
+
+c = np.sort(a, axis=0)
+print(c)
+
+d = a.ravel()
+print(d)
+
+print(np.sort(d))
